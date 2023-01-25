@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body {
+    background: linear-gradient(120deg, rgb(91, 225, 249), rgb(183, 233, 247));
+    color: #fff;
+    /* for text color */
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+
+
+#header {
+    height: 90vh;
+    width: 100%;
+}
+
+.photo {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* for centering the image */
+    background-image: url(images/photo4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px 0 rgba(244, 21, 62, 0.5);
+    position: absolute;
+    top: 120px;
+    right: 50px;
+
+}
+
+#header .container {
+    padding: 5px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* for space between the nav items i.e logo and menu */
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgb(247, 240, 240);
+}
+
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: #fff;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* for making the menu items in a single line */
+    margin: 0 20px;
+    position: relative;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    font-size: 19px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    /* so that the line will be invisible  and will be visible when we hover on the menu items */
+    background: rgb(231, 166, 98);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* so that the line will be visible when we hover on the menu items */
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(67, 59, 40);
+
+}
+
+nav ul li a.active {
+    color: rgb(67, 59, 40);
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    /* so that the line will be visible when we hover on the menu items */
+    transition: 0.5s;
+}
+
+.header-text {
+    margin-top: 15%;
+    margin-left: 13%;
+    font-size: 20px;
+    
+}
+.header-text em{
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(33, 22, 89);
+    text-shadow: 0 0 5px rgba(244, 21, 62, 0.5);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.readmore {
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(110deg, rgb(182, 230, 241), rgb(110, 227, 248));
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+.readmore a {
+    text-decoration: none;
+}
+.readmore:hover {
+    background: linear-gradient(110deg, rgb(81, 218, 242), rgb(129, 225, 245));
+    padding: 12px 12px;
+}
+
+/* -------------------------------ABOUT--------------------------------------------------------------------------- */
+
+#about{
+    padding : 30px 50px;
+    color: rgb(33, 31, 31);
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 20%;
+    margin-left: 150px;
+    rotate: -7deg;
+}
+.col1 img{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(244, 21, 62, 0.5);
+
+}
+.col2{
+    flex-basis: 60%;
+    margin-right: 50px;
+}
+.col2 h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(15, 14, 14);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.col2 h1 span{
+    color: rgb(67, 59, 40);
+}   
+.col2 p{
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+}
+
+/* -------------------------------Resume--------------------------------------------------------------------------- */
+
+#resume{
+    padding : 30px 50px;
+    margin : 30px 50px;
+    color: rgb(33, 31, 31);
+    border : 1px solid rgb(33, 31, 31);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(241, 130, 150, 0.5);
+    background-color: rgb(168, 232, 242);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+
+}   
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font : 40px bold;
+    color: rgb(33, 31, 31);
+
+}
+
+.download-resume-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkanddownload{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.codinglink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.leetcode img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin : 0 10px;
+}
+.leetcode img:hover{
+    transform: translate(0, -10px);
+}
+.codechef img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin : 10px 10px;
+}
+.codechef img:hover{
+    transform: translate(0, -10px);
+}
+.gfg img:hover{
+    transform: translate(0, -10px);
+}
+
+.download-resume-content a{
+    text-decoration: none;
+    color: rgb(33, 31, 31);
+    font-size: 20px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    position: relative;
+    border: 1px solid rgb(33, 31, 31);
+    padding: 5px 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+.download-resume-content a:hover{
+    background: linear-gradient(110deg, rgb(143, 207, 233), rgb(110, 232, 238));
+    padding: 7px 7px;
+    transition: 0.2s;
+}
+#resume h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font : 40px bold;
+    color: rgb(33, 31, 31);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------contact--------------------------------------------------------------------------- */
+
+
+#contact{
+    padding : 30px 50px;
+    color: rgb(33, 31, 31);
+    background-color: rgb(197, 242, 242);
+
+}
+.contact-left{
+    flex-basis: 40%;
+}
+.contact-left p{
+    margin: 10px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+}
+
+.contact-left p i{
+    margin-right: 5px;
+    font-size: 18px;
+    color: black;
+}
+.socialmedia a{
+    text-decoration: none;
+    display: inline block;
+}
+.socialmedia a i{
+    margin-right: 5px;
+    font-size: 18px;
+    color: black;
+    transition: 0.5s;
+}
+
+/* for changing the color of the social media icons while hovering */
+.socialmedia a:hover i{
+    color: rgb(21, 34, 209);
+    transform: translate(0, -5px);
+}
+.copyright{
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-right{
+    flex-basis: 55%;
+}
+.contact-right form{
+    width: 100%;
+}
+.contact-right form input{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+.contact-right form input:focus{
+    padding: 12px 12px;
+    transition: 0.2s;
+}
+.contact-right form textarea{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+.contact-right form textarea:focus{
+    padding: 12px 12px;
+    transition: 0.2s;
+}
+.contact-right form button{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(33, 31, 31);
+    letter-spacing: 1px;
+    transition: 0.2s;
+    background: linear-gradient(110deg, rgb(110, 232, 238), rgb(143, 207, 233));
+}
+.contact-right form button:hover{
+    background: linear-gradient(110deg, rgb(143, 207, 233), rgb(110, 232, 238));
+    padding: 12px 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#msg{
+    margin-top: -5px;
+    display: block;
+    color: green;
+
+}
+
+
+/* -------------------------------media queries--------------------------------------------------------------------------- */
+
+nav .fas{
+    display: none;
+}
+
+@media screen and (max-width: 1400px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photo{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    #header{
+        height: 60vh;
+    }
+
+    
+}
+@media screen and (max-width:1100px){
+    .col1{
+        margin-left: 0;
+        flex-basis: 28%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .photo{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 300px;
+
+    }
+    #header{
+        height: 50vh;
+    }
+    /* for the about section */
+    
+    .col2{
+        flex-basis: 70%;
+    }
+    .col2 h2{
+        font-size: 30px;
+    }
+    .col2 p{
+        font-size: 16px;
+    }
+    .col2 a{
+        font-size: 16px;
+    }
+    .col2 a:hover{
+        padding: 5px 5px;
+        transition: 0.2s;
+    }
+    .col2 a i{
+        font-size: 16px;
+    }
+    .col2 a i:hover{
+        transform: translate(0, -5px);
+        transition: 0.2s;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-right form input{
+        width: 100%;
+    }
+    .contact-right form textarea{
+        width: 100%;
+    }
+    .contact-right form button{
+        width: 100%;
+    }
+    .codinglink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .codinglink a{
+        margin: 10px 0;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: black;
+    }
+    
+    nav ul{
+        background: #53b8dd;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding : 30px 0;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    .header-text{
+        margin-top: 95px;
+    }
+    .header-text h1{
+        font-size: 22px;
+    }
+    .header-text h1 em{
+        font-size: 25px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+    .contact-left p{
+        font-size: 16px;
+    }
+    .contact-left p i{
+        font-size: 16px;
+    }
+    .socialmedia a i{
+        font-size: 16px;
+    }
+
+    .contact-right form input{
+        font-size: 14px;
+    }
+    .contact-right form textarea{
+        font-size: 14px;
+    }
+    .contact-right form button{
+        font-size: 14px;
+    }
+
+    .codinglink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .codinglink a{
+        margin: 10px 0;
+    }
+    .codinglink a img{
+        width: 80px;
+        height: 80px;
+    }
+    .codinglink a img:hover{
+        transform: translate(0, -10px);
+    }
+    .header-text{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    .header-text h1 em{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .contact-left p{
+        font-size: 14px;
+    }
+    .contact-left p i{
+        font-size: 14px;
+    }
+    .socialmedia a i{
+        font-size: 14px;
+    }
+
+    .contact-right form input{
+        font-size: 12px;
+    }
+    .contact-right form textarea{
+        font-size: 12px;
+    }
+    .contact-right form button{
+        font-size: 12px;
+    }
+    .header-text{
+        font-size: 12px;
+    }
+    .header-text h1{
+        font-size: 15px;
+    }
+    .header-text em{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .contact-left p{
+        font-size: 12px;
+    }
+    .contact-left p i{
+        font-size: 12px;
+    }
+    .socialmedia a i{
+        font-size: 12px;
+    }
+
+    .contact-right form input{
+        font-size: 10px;
+    }
+    .contact-right form textarea{
+        font-size: 10px;
+    }
+    .contact-right form button{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .contact-left p{
+        font-size: 10px;
+    }
+    .contact-left p i{
+        font-size: 10px;
+    }
+    .socialmedia a i{
+        font-size: 10px;
+    }
+
+    .contact-right form input{
+        font-size: 8px;
+    }
+    .contact-right form textarea{
+        font-size: 8px;
+    }
+    .contact-right form button{
+        font-size: 8px;
+    }
+}
+

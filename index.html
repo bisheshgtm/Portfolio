@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisheshgtm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a01dd78d1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I'am <em>BISHESH GAUTAM</em> </h1>
+                <p>Web Developer</p>
+                <h3>Welcome to my Website</h3>
+                <button class="readmore">
+                    <a href="#about">Read More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="photo">
+
+    </div>
+
+    <!-- ------------------------------ABOUT-------------------------------------------------------------------------------------------- -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/photo3.jpg" alt="">
+                </div>
+                <div class="col2">
+                    <h1>About me</h1>
+                    <p>Hey, I'am Bishesh Gautam and I am a Computer Science and Engineering student at NIT Rourkela. I am a quick learner, and always looking to improve my skills. My interests include Web Design/Development, Programming, Travelling which I believe helps me to stay creative and innovative in my work.</p>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------RESUME-------------------------------------------------------------------------------------------- -->
+
+    <div id="resume">
+        <p class="resume">Resume</p>
+        <div class="grid">
+            <div class="education">
+                <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+                <div class="education-content">
+                    <h3>Bachelor of Technology</h3>
+                    <p>NIT Rourkela</p>
+                    <p>Computer Science and Engineering</p>
+                    <p>2021-present</p>
+                    <h3>12th</h3>
+                    <p>St.Xavier's College, Maitighar, Kathmandu</p>
+                    <p>2019-2021</p>
+                    <h3>10th</h3>
+                    <p>Shishu Niketan English Boarding School</p>
+                    <p>2018</p>
+                </div>
+            </div>
+            <div class="skills">    
+                <h2><i class="fa-solid fa-code"></i>Skills</h2>
+                <div class="skills-content">
+                    <h3>Programming Languages</h3>
+                    <p>C, C++, HTML, CSS, JavaScript, Verilog, SQL</p>
+                    <h3>Tools</h3>
+                    <p>Git, Github, VS Code</p>
+                    <h3>Operating Systems</h3>
+                    <p>Windows, MacOS</p>
+                    <h3>Languages</h3>
+                    <p>English, Nepali, Hindi</p>
+
+                    
+                </div>
+            </div>
+            
+            <div class="linkanddownload">
+                <h2>Coding profile</h2>
+                <div class="codinglink">
+                    
+                    <a href="https://leetcode.com/bishesh1132/" class="leetcode"><img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" alt="logo"></a>
+                    <a href="https://www.codechef.com/users/bisheshgtm" class="codechef"><img class="m-header__image m-header__image--pc" src="https://cdn.codechef.com/images/cc-logo.svg" alt="CodeChef Logo"></a>
+                    <a href="https://auth.geeksforgeeks.org/user/bisheshg4t7c/" class="gfg"><img style="width:60px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" alt="GFG Logo"></a>
+                </div>
+                <div class="download-resume">
+                    <h2>Download Resume</h2>
+                    <div class="download-resume-content">
+                        <a href="images/Resume.pdf" download><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!---------------------------------CONTACT-------------------------------------------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bisheshgtm2004@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9124119968</p>
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/profile.php?id=100012243377258"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bishesh_gtm/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bishesh-gautam-102203215/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bisheshgtm"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h1>Send Me Your Message</h1>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" class="input-box" required>
+                        <input type="email" name="Email" placeholder="Email" class="input-box" required>
+                        <textarea name="Message"  rows="8" placeholder="Your Message" class="input-box" required></textarea>
+                        <button class="send-btn">Send</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+        </div>        
+        <div class="copyright">
+            <p>© 2023 Bishesh Gautam. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    <!-- -----------------------------------------------------Script------------------------------------------------------------------------ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
